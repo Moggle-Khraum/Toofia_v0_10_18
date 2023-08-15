@@ -14,3 +14,4 @@
 - The link of the download is [here](https://www.mediafire.com/file/xssqrq791901q3s/ToofiaV1.0.10_18.exe/file)
 
 **The Icon for the game Toofia:**
+![My Image](Assets/Icons/win7_launcher.png)
