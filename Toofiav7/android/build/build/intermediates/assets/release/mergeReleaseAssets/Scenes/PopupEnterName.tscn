@@ -1,0 +1,106 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scripts/PopupEnterName.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 59
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_top = 2
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="TitleLabel" type="Label" parent="Panel"]
+anchor_top = 0.195
+anchor_right = 0.958984
+anchor_bottom = 0.393333
+margin_right = 40.0
+margin_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 1 )
+text = "KEY_NMPT"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LineEdit" type="LineEdit" parent="Panel"]
+anchor_left = 0.226563
+anchor_top = 0.386667
+anchor_right = 0.813477
+anchor_bottom = 0.53
+custom_fonts/font = SubResource( 2 )
+align = 1
+max_length = 15
+placeholder_text = "KEY_NMHR"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="EnterButton" type="Button" parent="Panel"]
+anchor_left = 0.369141
+anchor_top = 0.578333
+anchor_right = 0.65332
+anchor_bottom = 0.696667
+action_mode = 0
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Panel/EnterButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 3 )
+text = "KEY_NMGT"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="Panel/EnterButton" to="." method="_on_EnterButton_pressed"]

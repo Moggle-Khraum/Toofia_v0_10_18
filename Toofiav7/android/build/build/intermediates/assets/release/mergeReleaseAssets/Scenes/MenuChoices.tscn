@@ -1,0 +1,462 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Scripts/MenuChoicesScript.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/Images/Tracing_Dd.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/farmAnimals.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/LevelScroll.gd" type="Script" id=6]
+[ext_resource path="res://Assets/Fonts/ButtonThemes.tres" type="Theme" id=7]
+[ext_resource path="res://Assets/Images/humanbody.jpg" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Fruits4.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = -5
+extra_spacing_space = -3
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFontData" id=4]
+font_path = "res://Assets/Fonts/KiriFont.otf"
+
+[sub_resource type="DynamicFont" id=5]
+size = 25
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0, 0, 0, 1 )
+border_color = Color( 0, 0, 0, 1 )
+border_blend = true
+corner_radius_top_left = 2
+expand_margin_left = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="DynamicFont" id=8]
+resource_local_to_scene = true
+size = 25
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=9]
+resource_local_to_scene = true
+size = 23
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=10]
+resource_local_to_scene = true
+size = 25
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=11]
+resource_local_to_scene = true
+size = 24
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="CanvasItemMaterial" id=7]
+light_mode = 1
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 2
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 7 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_clip_content = true
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BloxoftimeLabel" type="Label" parent="Panel"]
+anchor_left = 0.189453
+anchor_top = 0.0133333
+anchor_right = 0.8125
+anchor_bottom = 0.15
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 2 )
+text = "Blocks of time"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LevelSelectLabel" type="Label" parent="Panel"]
+anchor_left = 0.186523
+anchor_top = 0.113333
+anchor_right = 0.811523
+anchor_bottom = 0.198333
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 3 )
+text = "KEY_TPCGT"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="SchoolLogo" type="Panel" parent="Panel"]
+anchor_left = 0.841797
+anchor_top = 0.0283333
+anchor_right = 0.975586
+anchor_bottom = 0.223333
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Panel/SchoolLogo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "School
+Logo"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Panel" type="Panel" parent="Panel"]
+self_modulate = Color( 1, 1, 1, 0.0392157 )
+anchor_left = 0.352539
+anchor_top = 0.286667
+anchor_right = 0.680664
+anchor_bottom = 0.781667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 158.0
+margin_right = 2.0
+margin_bottom = 147.0
+rect_min_size = Vector2( 250, 210 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 13
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 7 )
+follow_focus = true
+scroll_horizontal = 2
+scroll_vertical_enabled = false
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+scroll_duration = 0.3
+
+[node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
+margin_left = -2.0
+margin_right = 2312.0
+margin_bottom = 250.0
+mouse_filter = 2
+size_flags_horizontal = 5
+size_flags_vertical = 5
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/CenterContainer"]
+margin_right = 2314.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 240, 250 )
+mouse_filter = 2
+custom_constants/margin_right = 430
+custom_constants/margin_top = 10
+custom_constants/margin_left = 430
+custom_constants/margin_bottom = 10
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/MarginContainer"]
+margin_left = 430.0
+margin_top = 10.0
+margin_right = 1884.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 240, 220 )
+size_flags_horizontal = 5
+size_flags_vertical = 5
+theme = ExtResource( 7 )
+custom_constants/separation = 170
+alignment = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Choice1" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+margin_right = 236.0
+margin_bottom = 230.0
+theme = ExtResource( 7 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CardMenu1" type="Button" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice1"]
+self_modulate = Color( 1, 1, 1, 0.32549 )
+anchor_left = 0.351695
+anchor_top = 0.395652
+anchor_right = 0.538136
+anchor_bottom = 0.582609
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CardLabel1" type="Label" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice1"]
+anchor_top = 0.747826
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 8 )
+text = "KEY_FRVGT"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Choice2" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+margin_left = 406.0
+margin_right = 642.0
+margin_bottom = 230.0
+texture = ExtResource( 5 )
+stretch_mode = 4
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CardMenu2" type="Button" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice2"]
+self_modulate = Color( 1, 1, 1, 0.243137 )
+anchor_left = 0.385593
+anchor_top = 0.395652
+anchor_right = 0.550847
+anchor_bottom = 0.56087
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CardLabel2" type="Label" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice2"]
+anchor_top = 0.834783
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 9 )
+text = "KEY_FRMAN"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Choice3" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+margin_left = 812.0
+margin_right = 1048.0
+margin_bottom = 230.0
+texture = ExtResource( 4 )
+stretch_mode = 4
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CardMenu3" type="Button" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice3"]
+self_modulate = Color( 1, 1, 1, 0.203922 )
+anchor_left = 0.338983
+anchor_top = 0.378261
+anchor_right = 0.508475
+anchor_bottom = 0.556522
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CardLabel3" type="Label" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice3"]
+anchor_top = 0.717391
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 10 )
+text = "KEY_ALPTR"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Choice4" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+margin_left = 1218.0
+margin_right = 1454.0
+margin_bottom = 230.0
+theme = ExtResource( 7 )
+texture = ExtResource( 8 )
+stretch_mode = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CardMenu4" type="Button" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice4"]
+self_modulate = Color( 1, 1, 1, 0.298039 )
+anchor_left = 0.411017
+anchor_top = 0.365217
+anchor_right = 0.627119
+anchor_bottom = 0.569565
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CardLabel4" type="Label" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice4"]
+anchor_top = 0.704348
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 11 )
+text = "KEY_PNKNT"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="VisibleBlockerRight" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.313726 )
+light_mask = 5
+material = SubResource( 7 )
+anchor_left = 0.701172
+anchor_top = 0.225
+anchor_right = 1.0
+anchor_bottom = 0.781667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="VisibleBlockerLeft" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.313726 )
+anchor_top = 0.185
+anchor_right = 0.325195
+anchor_bottom = 0.783333
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="GoBackButton" type="Button" parent="."]
+anchor_left = 0.367188
+anchor_top = 0.863333
+anchor_right = 0.614258
+anchor_bottom = 0.996667
+size_flags_horizontal = 3
+size_flags_vertical = 3
+flat = true
+icon_align = 1
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="BackLabel" type="Label" parent="GoBackButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 1 )
+text = "KEY_GBCK"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice1/CardMenu1" to="ScrollContainer" method="_on_CardMenu1_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice2/CardMenu2" to="ScrollContainer" method="_on_CardMenu2_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice3/CardMenu3" to="ScrollContainer" method="_on_CardMenu3_pressed"]
+[connection signal="pressed" from="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer/Choice4/CardMenu4" to="ScrollContainer" method="_on_CardMenu4_pressed"]
+[connection signal="pressed" from="GoBackButton" to="." method="_on_GoBackButton_pressed"]

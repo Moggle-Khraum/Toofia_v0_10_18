@@ -1,0 +1,160 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.godot.toofiav10"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="32" />
+10
+11    <supports-screens
+11-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:12:5-16:40
+12        android:largeScreens="true"
+12-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:15:9-36
+13        android:normalScreens="true"
+13-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:14:9-37
+14        android:smallScreens="true"
+14-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:13:9-36
+15        android:xlargeScreens="true" />
+15-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:16:9-37
+16
+17    <uses-feature
+17-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:10:5-78
+18        android:glEsVersion="0x00030000"
+18-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:10:19-51
+19        android:required="true" />
+19-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:10:52-75
+20
+21    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+21-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:11:5-79
+21-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:11:22-76
+22    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+22-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:12:5-74
+22-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:12:22-71
+23    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+23-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:13:5-78
+23-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:13:22-75
+24    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+24-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:14:5-77
+24-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:14:22-74
+25    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+25-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:15:5-74
+25-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:15:22-71
+26    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+26-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:16:5-75
+26-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:16:22-72
+27    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+27-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:17:5-82
+27-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:17:22-79
+28    <uses-permission
+28-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:18:5-107
+29        android:name="android.permission.READ_EXTERNAL_STORAGE"
+29-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:18:22-77
+30        android:maxSdkVersion="29" />
+30-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:18:78-104
+31    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+31-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:19:5-79
+31-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:19:22-76
+32    <uses-permission
+32-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:20:5-108
+33        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+33-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:20:22-78
+34        android:maxSdkVersion="29" />
+34-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:20:79-105
+35    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+35-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:21:5-80
+35-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:21:22-77
+36    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+36-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:22:5-73
+36-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:22:22-70
+37    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+37-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:23:5-78
+37-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:23:22-75
+38    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+38-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:24:5-80
+38-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\src\release\AndroidManifest.xml:24:22-77
+39
+40    <application
+40-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:30:5-94:19
+41        android:allowBackup="false"
+41-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:30:68-95
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.2.0] C:\Users\User\.gradle\caches\transforms-3\086694f904f7332915774462ffe124fb\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
+43        android:hasFragileUserData="false"
+43-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:30:118-152
+44        android:icon="@mipmap/icon"
+44-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:30:238-265
+45        android:isGame="true"
+45-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:30:96-117
+46        android:label="@string/godot_project_name_string"
+46-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:30:18-67
+47        android:requestLegacyExternalStorage="true" >
+47-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:30:153-197
+48        <activity
+48-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:65:9-88:20
+49            android:name="com.godot.game.GodotApp"
+49-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:66:13-37
+50            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+50-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:73:13-141
+51            android:excludeFromRecents="false"
+51-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:70:13-47
+52            android:exported="true"
+52-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:71:13-36
+53            android:label="@string/godot_project_name_string"
+53-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:67:13-62
+54            android:launchMode="singleTask"
+54-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:69:13-44
+55            android:resizeableActivity="true"
+55-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:74:13-47
+56            android:screenOrientation="landscape"
+56-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:72:13-50
+57            android:theme="@style/GodotAppSplashTheme" >
+57-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:68:13-55
+58            <intent-filter>
+58-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:80:13-87:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:81:17-69
+59-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:81:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:82:17-77
+61-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:82:27-74
+62
+63                <!--
+64                Enable access to OpenXR on Oculus mobile devices, no-op on other Android
+65                platforms.
+66                -->
+67                <category android:name="com.oculus.intent.category.VR" />
+67-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:86:17-74
+67-->C:\Users\User\Documents\Toofia Prototypes\Toofiav7\android\build\AndroidManifest.xml:86:27-71
+68            </intent-filter>
+69        </activity>
+70        <!-- Records the version of the Godot editor used for building -->
+71        <meta-data
+72            android:name="org.godotengine.editor.version"
+73            android:value="3.5.2.stable" /> <!-- Records the version of the Godot library -->
+74        <meta-data
+74-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:14:9-16:44
+75            android:name="org.godotengine.library.version"
+75-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:15:13-59
+76            android:value="3.5.2.stable" />
+76-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:16:13-41
+77
+78        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+78-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:18:9-80
+78-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:18:18-77
+79
+80        <activity
+80-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:20:9-24:75
+81            android:name="org.godotengine.godot.utils.ProcessPhoenix"
+81-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:21:13-70
+82            android:exported="false"
+82-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:22:13-37
+83            android:process=":phoenix"
+83-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:23:13-39
+84            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+84-->[godot-lib.release.aar] C:\Users\User\.gradle\caches\transforms-3\0fa57c0f6a5b656a5e020e48cde123e3\transformed\jetified-godot-lib.release\AndroidManifest.xml:24:13-72
+85    </application>
+86
+87</manifest>

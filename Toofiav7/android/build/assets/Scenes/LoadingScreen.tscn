@@ -1,0 +1,228 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Images/gears.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Images/blackScreen.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Themes/loadingBarTheme.tres" type="StyleBox" id=7]
+[ext_resource path="res://Assets/Themes/loadbar0.tres" type="StyleBox" id=8]
+[ext_resource path="res://Scripts/LoadingScreenScript.gd" type="Script" id=9]
+
+[sub_resource type="DynamicFontData" id=6]
+font_path = "res://Assets/Fonts/therok-regular-400.otf"
+
+[sub_resource type="DynamicFont" id=7]
+size = 130
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 6 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 40
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+outline_size = 3
+outline_color = Color( 0, 0, 0, 0.745098 )
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 35
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 6
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 18
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="MainPanel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="TitleLabel" type="Label" parent="MainPanel"]
+anchor_top = -0.005
+anchor_right = 0.999023
+anchor_bottom = 0.43
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 12
+custom_fonts/font = SubResource( 7 )
+text = "Toofia"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="TMLabel" type="Label" parent="MainPanel/TitleLabel"]
+anchor_left = 0.684262
+anchor_top = 0.249042
+anchor_right = 0.725317
+anchor_bottom = 0.363985
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "tm"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="SubTitleLabel" type="Label" parent="MainPanel"]
+anchor_left = 0.000976563
+anchor_top = 0.301667
+anchor_right = 1.00098
+anchor_bottom = 0.386667
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 8 )
+text = "Educational Mobile Tool"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LoadingBar" type="ProgressBar" parent="MainPanel"]
+anchor_left = 0.198242
+anchor_top = 0.681667
+anchor_right = 0.736328
+anchor_bottom = 0.778333
+rect_clip_content = true
+size_flags_horizontal = 4
+size_flags_vertical = 5
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_styles/fg = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LoadingLabel" type="Label" parent="MainPanel"]
+anchor_left = 0.201172
+anchor_top = 0.606667
+anchor_right = 0.736328
+anchor_bottom = 0.678333
+margin_right = -3.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "Loading Game"
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Node2D" type="Node2D" parent="MainPanel"]
+position = Vector2( 798, 436 )
+scale = Vector2( 0.22, 0.22 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SpinGear" type="Sprite" parent="MainPanel/Node2D"]
+show_behind_parent = true
+scale = Vector2( 0.075, 0.075 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SpinGear2" type="Sprite" parent="MainPanel/Node2D"]
+show_behind_parent = true
+position = Vector2( 200, -177.27 )
+rotation = -1.05069
+scale = Vector2( 0.075, 0.075 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VersionLabel" type="Label" parent="."]
+anchor_top = 0.948333
+anchor_right = 0.233398
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 5 )
+text = "Toofia Prototype ver.0.7"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="MadeInLabel" type="Label" parent="."]
+anchor_left = 0.766602
+anchor_top = 0.948333
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 5 )
+text = "made in godot engine"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="blackFade" type="Sprite" parent="."]
+position = Vector2( 515, 297.5 )
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}

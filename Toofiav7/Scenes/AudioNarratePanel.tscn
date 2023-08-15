@@ -1,0 +1,114 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/KenneyUIPacks/blue_boxUncheck.png" type="Texture" id=3]
+[ext_resource path="res://Assets/KenneyUIPacks/blue_boxCheckmark.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/AudioNarratePanel.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=7]
+size = 25
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 30
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="AudioNarratePanel" type="Panel"]
+self_modulate = Color( 1, 1, 1, 0.45098 )
+anchor_left = 0.000976563
+anchor_top = 0.00666667
+anchor_right = 0.323242
+anchor_bottom = 0.466667
+margin_left = -1.0
+margin_top = -4.0
+margin_right = -1.0
+margin_bottom = -4.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="AudioTitleLabel" type="Label" parent="."]
+anchor_right = 1.0
+margin_bottom = 57.0
+size_flags_vertical = 2
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 7 )
+text = " KEY_GMAUD"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NarratorCheckBox" type="CheckBox" parent="."]
+anchor_left = 0.00265252
+anchor_top = 0.199275
+anchor_right = 1.0
+anchor_bottom = 0.405797
+custom_icons/checked = ExtResource( 4 )
+custom_icons/unchecked = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="NarratorLabel" type="Label" parent="NarratorCheckBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 49.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 5 )
+text = " KEY_GMNRT:"
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MusicCheckBox" type="CheckBox" parent="."]
+anchor_left = 0.00265252
+anchor_top = 0.445652
+anchor_right = 1.0
+anchor_bottom = 0.634058
+custom_icons/checked = ExtResource( 4 )
+custom_icons/unchecked = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="MusicLabel" type="Label" parent="MusicCheckBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 49.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 5 )
+text = " KEY_MSC:"
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="toggled" from="MusicCheckBox" to="." method="_on_MusicCheckBox_toggled"]

@@ -1,0 +1,307 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Fonts/Titillium-RegularItalic.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scripts/CreditsDummy.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Fonts/Titillium-Bold.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/Fonts/Titillium-Regular.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/Fonts/Titillium-BoldItalic.otf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+resource_local_to_scene = true
+size = 45
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_top = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+font_data = ExtResource( 5 )
+
+[node name="Node" type="Node"]
+script = ExtResource( 3 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+self_modulate = Color( 1, 1, 1, 0.694118 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TransparentBG" type="Panel" parent="MarginContainer"]
+self_modulate = Color( 1, 1, 1, 0.458824 )
+show_behind_parent = true
+margin_right = 1024.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_left = 0.0458984
+anchor_top = 0.0733333
+anchor_right = 0.955078
+anchor_bottom = 0.928333
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
+margin_right = 931.0
+margin_bottom = 513.0
+rect_min_size = Vector2( 931, 513 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="CenterContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 924.0
+margin_bottom = 506.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ExitButton" type="Button" parent="CenterContainer/PanelContainer/Panel"]
+anchor_left = 0.344602
+anchor_top = 0.885772
+anchor_right = 0.623773
+anchor_bottom = 0.997996
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/Panel/ExitButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 5
+size_flags_vertical = 3
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 1 )
+text = "KEY_GBCK"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CreditsLabel" type="Label" parent="CenterContainer/PanelContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 0.186373
+mouse_filter = 1
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 2 )
+text = "KEY_GMCT"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchor_left = 0.0820313
+anchor_top = 0.218333
+anchor_right = 0.94043
+anchor_bottom = 0.805
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_right = 879.0
+margin_bottom = 1428.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/VBoxContainer"]
+margin_right = 879.0
+margin_bottom = 1428.0
+rect_min_size = Vector2( 879, 0 )
+custom_fonts/bold_italics_font = SubResource( 3 )
+custom_fonts/italics_font = SubResource( 4 )
+custom_fonts/bold_font = SubResource( 5 )
+custom_fonts/normal_font = SubResource( 6 )
+bbcode_enabled = true
+bbcode_text = "[b][u]A.B.S. Studios[/u][/b]
+[i]Alabado, Bicol, Samaranos Studios[/i]
+[i]Toofia alpha.v1.0.0.10[/i]
+
+[b]The Development Team[/b]
+Members:
+
+[b] -[u] Dave Alabado[/u][/b]
+The Project's Lead Developer, Co-Designer, Lead Alpha Tester, & Co-Documentation-charge
+
+[b] -[u] Princess Jai Bicol[/u][/b]
+The Project's Lead Documentation-in charge, Lead Designer, Co-Data Collector, & Lead Beta Tester
+
+[b] -[u] Karen Samaranos[/u][/b]
+The Project's Co-Documention-in charge, Lead Quality Checker, Lead Data Collector, & Co-Beta Tester
+
+[b][u]The Project Contributors[/u][/b]
+[u]Acknowledgements[/u]
+
+[b]Music by:[/b]
+[u]Jan Schulte[/u] [i](Discord: [u]@Tzaot)[/u][/i]
+
+[b]Voice Sound Effects (VFX) by: [/b]
+[u]Text-To-Speech MP3 [/u] [i][u](https://ttsmp3.com)[/u][/i]
+For Tagalog/Filipino and English Voice Assets
+
+[b]Sound Effects (SFX) by:[/b]
+[u]SoundBible[/u] [i][u](https://soundbible.com/)[/u][/i]
+[u]Freesound.org[/u] [i][u](https://freesound.org/)[/u][/i]
+[u]ZapSplat[/u] [i][u](https://www.zapsplat.com/)[/u][/i]
+[u]Free-Loops[/u] [i][u](https://free-loops.com/)[/u][/i]
+
+
+
+[b][u]System & Logic Tutorials[/u][/b]
+
+[b] -[u] Volter[/u][/b] [i](Youtube: [u]@MewPurPur[/u][/i]
+For the Tween Introduction Tutorial
+
+[b] -[u] FinePointCGI[/u][/b] [i]Youtube: [u]@FinePointCGI[/u][/i]
+For the Translation|Localization Tutorial
+
+[b] -[u] rayuse rp[/u][/b] [i]Youtube: [u]@rayuse rp[/u][/i]
+For the Simple Level Select Tutorial
+
+[b] -[u] David Satrio[/u][/b] [i]Youtube: [u]@davidsatrio3847[/u][/i]
+For the Godot Swipe Menu Tutorial
+
+[b] -[u] Kron[/u][/b] [i]Youtube: [u]@actuallyKron[/u][/i]
+For the Intro Maker Tutorial
+
+[b] -[u] Chevifier[/u][/b] [i]Youtube: [u]@Chevifier[/u][/i]
+For the Interactive Loading Screen Tutorial
+
+[b] -[u] Dicode[/u][/b] [i]Youtube: [u]@dicode1q[/u][/i]
+For the Background Loading Screen Tutorial
+
+[b] -[u] The Shaggy Dev[/u][/b] [i]Youtube: [u]@TheShaggyDev[/u][/i]
+For the Scene Transitions Tutorial
+
+[b] -[u] rocket 007[/u][/b] [i]Youtube: [u]@rocket007[/u][/i]
+For the Super Cool Button Tutorial
+
+[b] -[u] Jon Topielski[/u][/b] [i]Youtube: [u]@jontopielski6227[/u][/i]
+For the Fade Transition Tutorial
+
+
+"
+text = "A.B.S. Studios
+Alabado, Bicol, Samaranos Studios
+Toofia alpha.v1.0.0.10
+
+The Development Team
+Members:
+
+ - Dave Alabado
+The Project's Lead Developer, Co-Designer, Lead Alpha Tester, & Co-Documentation-charge
+
+ - Princess Jai Bicol
+The Project's Lead Documentation-in charge, Lead Designer, Co-Data Collector, & Lead Beta Tester
+
+ - Karen Samaranos
+The Project's Co-Documention-in charge, Lead Quality Checker, Lead Data Collector, & Co-Beta Tester
+
+The Project Contributors
+Acknowledgements
+
+Music by:
+Jan Schulte (Discord: @Tzaot)
+
+Voice Sound Effects (VFX) by: 
+Text-To-Speech MP3  (https://ttsmp3.com)
+For Tagalog/Filipino and English Voice Assets
+
+Sound Effects (SFX) by:
+SoundBible (https://soundbible.com/)
+Freesound.org (https://freesound.org/)
+ZapSplat (https://www.zapsplat.com/)
+Free-Loops (https://free-loops.com/)
+
+
+
+System & Logic Tutorials
+
+ - Volter (Youtube: @MewPurPur
+For the Tween Introduction Tutorial
+
+ - FinePointCGI Youtube: @FinePointCGI
+For the Translation|Localization Tutorial
+
+ - rayuse rp Youtube: @rayuse rp
+For the Simple Level Select Tutorial
+
+ - David Satrio Youtube: @davidsatrio3847
+For the Godot Swipe Menu Tutorial
+
+ - Kron Youtube: @actuallyKron
+For the Intro Maker Tutorial
+
+ - Chevifier Youtube: @Chevifier
+For the Interactive Loading Screen Tutorial
+
+ - Dicode Youtube: @dicode1q
+For the Background Loading Screen Tutorial
+
+ - The Shaggy Dev Youtube: @TheShaggyDev
+For the Scene Transitions Tutorial
+
+ - rocket 007 Youtube: @rocket007
+For the Super Cool Button Tutorial
+
+ - Jon Topielski Youtube: @jontopielski6227
+For the Fade Transition Tutorial
+
+
+"
+fit_content_height = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="CenterContainer/PanelContainer/Panel/ExitButton" to="." method="_on_ExitButton_pressed"]

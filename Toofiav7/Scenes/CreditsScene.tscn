@@ -1,0 +1,212 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scripts/CreditsScripts.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=3]
+
+[sub_resource type="Theme" id=8]
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.14902, 0.14902, 0.14902, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.529412, 0.529412, 0.529412, 1 )
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="DynamicFont" id=6]
+size = 38
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_top = 15
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+resource_local_to_scene = true
+size = 20
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_top = 6
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 30
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 30
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="CreditsPopup" type="Popup"]
+visible = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+popup_exclusive = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BGPanel" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.435294 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FGPanel" type="Panel" parent="BGPanel"]
+anchor_left = 0.244141
+anchor_top = 0.0666667
+anchor_right = 0.72168
+anchor_bottom = 0.915
+theme = SubResource( 8 )
+custom_styles/panel = SubResource( 9 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="GmSetLabel" type="Label" parent="BGPanel/FGPanel"]
+anchor_left = 0.00204499
+anchor_right = 1.0
+anchor_bottom = 0.261297
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 6 )
+text = "Mga setting
+ng laro"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ShowTutorialBtn" type="Button" parent="BGPanel/FGPanel"]
+anchor_left = 0.188138
+anchor_top = 0.286837
+anchor_right = 0.822085
+anchor_bottom = 0.394892
+custom_fonts/font = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="TutorBtnLabel" type="Label" parent="BGPanel/FGPanel/ShowTutorialBtn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 7 )
+text = "ipakita ang gabay"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ShowCreditsBtn" type="Button" parent="BGPanel/FGPanel"]
+anchor_left = 0.190183
+anchor_top = 0.420432
+anchor_right = 0.817995
+anchor_bottom = 0.528487
+custom_fonts/font = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CreditsBtnLabel" type="Label" parent="BGPanel/FGPanel/ShowCreditsBtn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 5 )
+text = "Mga Pagkilala"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BackButton" type="Button" parent="BGPanel/FGPanel"]
+anchor_left = 0.308793
+anchor_top = 0.88998
+anchor_right = 0.728016
+anchor_bottom = 0.984283
+clip_text = true
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="BckBtnLabel" type="Label" parent="BGPanel/FGPanel/BackButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 1 )
+text = "Bumalik"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MusicBox" type="CheckBox" parent="BGPanel/FGPanel"]
+margin_left = 93.9996
+margin_top = 282.0
+margin_right = 401.0
+margin_bottom = 337.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MusicLabel" type="Label" parent="BGPanel/FGPanel/MusicBox"]
+anchor_left = 0.208469
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="BGPanel/FGPanel/ShowTutorialBtn" to="." method="_on_ShowTutorialBtn_pressed"]
+[connection signal="pressed" from="BGPanel/FGPanel/ShowCreditsBtn" to="." method="_on_ShowCreditsBtn_pressed"]
+[connection signal="pressed" from="BGPanel/FGPanel/BackButton" to="." method="_on_BackButton_pressed"]

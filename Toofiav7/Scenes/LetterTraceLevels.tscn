@@ -1,0 +1,228 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/LevelsPopupLogicDummy.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Images/Tracing_Dd.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+resource_local_to_scene = true
+size = 35
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+resource_local_to_scene = true
+size = 40
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+resource_local_to_scene = true
+size = 25
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = 3
+extra_spacing_char = 1
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+resource_local_to_scene = true
+size = 38
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Node"]
+script = ExtResource( 2 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+self_modulate = Color( 1, 1, 1, 0.694118 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TransparentBG" type="Panel" parent="MarginContainer"]
+self_modulate = Color( 1, 1, 1, 0.458824 )
+show_behind_parent = true
+margin_right = 1024.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_left = 0.0458984
+anchor_top = 0.0733333
+anchor_right = 0.955078
+anchor_bottom = 0.928333
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Popup" type="PanelContainer" parent="CenterContainer"]
+margin_right = 931.0
+margin_bottom = 513.0
+rect_min_size = Vector2( 931, 513 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="CenterContainer/Popup"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 924.0
+margin_bottom = 506.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ExitButton" type="Button" parent="CenterContainer/Popup/Panel"]
+anchor_left = 0.953108
+anchor_top = 0.01002
+anchor_right = 0.995638
+anchor_bottom = 0.0881764
+flat = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ExitLabel" type="Label" parent="CenterContainer/Popup/Panel/ExitButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 1 )
+text = "X"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LevelIcon" type="TextureRect" parent="CenterContainer/Popup/Panel"]
+anchor_left = 0.0654308
+anchor_top = 0.220441
+anchor_right = 0.496183
+anchor_bottom = 0.907816
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="LevelButton" type="Button" parent="CenterContainer/Popup/Panel"]
+anchor_left = 0.600872
+anchor_top = 0.831663
+anchor_right = 0.928026
+anchor_bottom = 0.9499
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ButtonLabel" type="Label" parent="CenterContainer/Popup/Panel/LevelButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 2 )
+text = "Lets Play!"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/Popup/Panel"]
+anchor_left = 0.0676118
+anchor_top = 0.0420842
+anchor_right = 0.499455
+anchor_bottom = 0.222445
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 3 )
+text = "Pagguhit ng Alpabeto"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="NoticeLabel" type="Label" parent="CenterContainer/Popup/Panel"]
+anchor_left = 0.529989
+anchor_top = 0.216433
+anchor_right = 0.969466
+anchor_bottom = 0.823647
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 4 )
+text = "Sa paksang ito matatalakay ang 
+patungkol sa pagguhit ng letra,  kung paano gumuhit ng mga letra. At dito din mahahasa
+ang iyong angking galing sa pagguhit."
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="InfoLabel" type="Label" parent="CenterContainer/Popup/Panel"]
+anchor_left = 0.649945
+anchor_top = 0.118237
+anchor_right = 0.840785
+anchor_bottom = 0.198397
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 5 )
+text = "Paalala:"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="CenterContainer/Popup/Panel/ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="pressed" from="CenterContainer/Popup/Panel/LevelButton" to="." method="_on_LevelButton_pressed"]

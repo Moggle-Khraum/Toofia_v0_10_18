@@ -1,0 +1,311 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scripts/CreditsScripts.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Fonts/KiriFont.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/Images/sound.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/soundOFF.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/MusicPanel.gd" type="Script" id=6]
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_bottom = -11
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+resource_local_to_scene = true
+size = 20
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_top = 6
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 21
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 30
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0, 0.427451, 0.45098, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.0117647, 0.270588, 0.392157, 1 )
+border_blend = true
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="GmSetLabel" type="Label" parent="Panel"]
+anchor_top = 0.0216667
+anchor_right = 1.0
+anchor_bottom = 0.17
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 2 )
+text = "KEY_GMST"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="BackButton" type="Button" parent="Panel"]
+anchor_left = 0.395508
+anchor_top = 0.891667
+anchor_right = 0.59375
+anchor_bottom = 0.981667
+clip_text = true
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="BckBtnLabel" type="Label" parent="Panel/BackButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 1 )
+text = "KEY_GBCK"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GmLangLabel" type="Label" parent="."]
+anchor_top = 0.16
+anchor_right = 1.0
+anchor_bottom = 0.248333
+rect_min_size = Vector2( 500, 50 )
+size_flags_vertical = 2
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 3 )
+text = "KEY_LNGGM"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="FilBtn" type="Button" parent="."]
+anchor_left = 0.226563
+anchor_top = 0.255
+anchor_right = 0.475586
+anchor_bottom = 0.348333
+rect_min_size = Vector2( 200, 50 )
+custom_fonts/font = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="FilBtnLabel" type="Label" parent="FilBtn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 5 )
+text = "KEY_TGLLNG"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="EnBtn" type="Button" parent="."]
+anchor_left = 0.521484
+anchor_top = 0.25
+anchor_right = 0.770508
+anchor_bottom = 0.341667
+margin_bottom = 1.0
+rect_min_size = Vector2( 200, 50 )
+custom_fonts/font = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="EnBtnLabel" type="Label" parent="EnBtn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 5 )
+text = "KEY_ENGLNG"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GmOptLabel" type="Label" parent="."]
+anchor_top = 0.366667
+anchor_right = 1.0
+anchor_bottom = 0.466667
+size_flags_vertical = 2
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 6 )
+text = "KEY_OPTGM"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ShowTutorialBtn" type="Button" parent="."]
+anchor_left = 0.520508
+anchor_top = 0.48
+anchor_right = 0.927734
+anchor_bottom = 0.585
+custom_fonts/font = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="TutorBtnLabel" type="Label" parent="ShowTutorialBtn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 5 )
+text = "KEY_SHTUT"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ShowCreditsBtn" type="Button" parent="."]
+anchor_left = 0.521484
+anchor_top = 0.613333
+anchor_right = 0.930664
+anchor_bottom = 0.718333
+custom_fonts/font = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CreditsBtnLabel" type="Label" parent="ShowCreditsBtn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 5 )
+text = "KEY_SHCRE"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MusicPanel" type="Panel" parent="."]
+margin_left = 234.0
+margin_top = 278.0
+margin_right = 376.0
+margin_bottom = 412.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 7 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MusicTextureButton" type="TextureButton" parent="MusicPanel"]
+anchor_left = 0.0402685
+anchor_top = 0.0342466
+anchor_right = 0.966443
+anchor_bottom = 0.958904
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="Panel/BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="FilBtn" to="." method="_on_FilBtn_pressed"]
+[connection signal="pressed" from="EnBtn" to="." method="_on_EnBtn_pressed"]
+[connection signal="pressed" from="ShowTutorialBtn" to="." method="_on_ShowTutorialBtn_pressed"]
+[connection signal="pressed" from="ShowCreditsBtn" to="." method="_on_ShowCreditsBtn_pressed"]
+[connection signal="toggled" from="MusicPanel/MusicTextureButton" to="MusicPanel" method="_on_MusicTextureButton_toggled"]

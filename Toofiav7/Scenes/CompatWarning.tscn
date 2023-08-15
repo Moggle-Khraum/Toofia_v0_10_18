@@ -1,0 +1,139 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/CompatAlert.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/therok-regular-400.otf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 51
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 3
+outline_color = Color( 0, 0, 0, 0.854902 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxLine" id=3]
+color = Color( 0.517647, 0.517647, 0.517647, 1 )
+thickness = 2
+
+[node name="PopupDialog" type="Popup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+popup_exclusive = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_left = 0.0556641
+anchor_top = 0.0733333
+anchor_right = 0.949219
+anchor_bottom = 0.906667
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="PanelPopup" type="Panel" parent="CenterContainer"]
+margin_right = 915.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 915, 500 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PanelBox" type="Panel" parent="CenterContainer/PanelPopup"]
+anchor_left = 0.00369914
+anchor_top = 0.00649351
+anchor_right = 0.996301
+anchor_bottom = 0.15368
+size_flags_horizontal = 5
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CompatLabel" type="Label" parent="CenterContainer/PanelPopup/PanelBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 7
+custom_fonts/font = SubResource( 1 )
+text = "Kompatibleng Babala"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ExitButton" type="Button" parent="CenterContainer/PanelPopup"]
+anchor_left = 0.431566
+anchor_top = 0.831169
+anchor_right = 0.590629
+anchor_bottom = 0.95671
+mouse_filter = 1
+input_pass_on_modal_close_click = false
+action_mode = 0
+button_mask = 3
+flat = true
+icon_align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="ExitLabel" type="Label" parent="CenterContainer/PanelPopup/ExitButton"]
+anchor_left = -1.01001
+anchor_top = 0.0637242
+anchor_right = 2.08874
+anchor_bottom = 1.06738
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 6
+custom_fonts/font = SubResource( 2 )
+text = "Lumabas sa Laro"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/PanelPopup"]
+anchor_top = 0.81
+anchor_right = 0.997814
+anchor_bottom = 0.836
+custom_constants/separation = 4
+custom_styles/separator = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer/PanelPopup"]
+anchor_left = 0.00739827
+anchor_top = 0.164502
+anchor_right = 0.988903
+anchor_bottom = 0.805195
+focus_mode = 2
+bbcode_enabled = true
+fit_content_height = true
+selection_enabled = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="CenterContainer/PanelPopup/ExitButton" to="." method="_on_ExitButton_pressed"]

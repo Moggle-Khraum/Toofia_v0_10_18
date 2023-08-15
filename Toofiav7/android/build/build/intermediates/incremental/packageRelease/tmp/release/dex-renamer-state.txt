@@ -1,0 +1,4 @@
+#Sat Aug 05 17:45:46 SGT 2023
+base.0=C\:\\Users\\User\\Documents\\Toofia Prototypes\\Toofiav7\\android\\build\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

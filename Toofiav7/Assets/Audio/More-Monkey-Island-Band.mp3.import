@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/More-Monkey-Island-Band.mp3-21283eb45ed6f682a183b75c2e50ac0c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/More-Monkey-Island-Band.mp3"
+dest_files=[ "res://.import/More-Monkey-Island-Band.mp3-21283eb45ed6f682a183b75c2e50ac0c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

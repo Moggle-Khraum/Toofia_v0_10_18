@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Audio/Intro4Bugo.wav" type="AudioStream" id=1]
+[ext_resource path="res://Scripts/MusicThemePlayer.gd" type="Script" id=2]
+
+[node name="MusicThemePlayer" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+bus = "Music"
+script = ExtResource( 2 )
+
+[connection signal="finished" from="." to="." method="_on_MusicThemePlayer_finished"]
