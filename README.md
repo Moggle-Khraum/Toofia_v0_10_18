@@ -18,5 +18,5 @@
   src="Toofiav7/Assets/Icons/win7_launcher.png"
   alt="Purple Block with word Toofia in it"
   title="Toofia"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 100px; max-length:120px">
 
