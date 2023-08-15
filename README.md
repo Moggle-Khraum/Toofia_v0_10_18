@@ -15,7 +15,7 @@
 
 **The Icon for the game Toofia:**
 <img
-  src="Toofiav7/Assets/Icons/win7_launcher.png"
+  src="Toofiav7/Assets/Icons/win7icon.ico"
   alt="Purple Block with word Toofia in it"
   title="Toofia"
   style="display: inline-block; margin: 0 auto; max-width: 100px; max-length:120px">
