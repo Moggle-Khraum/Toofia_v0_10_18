@@ -13,8 +13,9 @@
 **Download the prototype (Desktop Only)**
 - The link of the download is [here](https://www.mediafire.com/file/xssqrq791901q3s/ToofiaV1.0.10_18.exe/file)
 
-<p The toofia game icon /p>
+
 <p align="center">
+    <b> The game's Toofia icon:</b><br>
     <img width="200" src="Toofiav7/Assets/Icons/win7icon.ico" alt="The Icon for the game Toofia" title="Toofia Icon">
 </p>
 
