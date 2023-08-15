@@ -16,6 +16,7 @@
 
 <p align="center">
     <b> The game's Toofia icon:</b><br>
+    <br>
     <img width="200" src="Toofiav7/Assets/Icons/win7icon.ico" alt="The Icon for the game Toofia" title="Toofia Icon">
 </p>
 
